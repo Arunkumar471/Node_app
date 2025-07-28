@@ -13,7 +13,7 @@ mongose.connect(process.env.DB_URL).then(() => {
     console.log('Connected to MongoDB');
 
   app.listen(port, () => {
-  console.log(`Server is running on ${port}`);
+  console.log(`Notebooks Server is running on ${port}`);
 
 });
 }).catch(err => {
