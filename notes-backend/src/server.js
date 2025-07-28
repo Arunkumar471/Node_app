@@ -1,14 +1,13 @@
 const express = require('express');
-const mongose = require('mongoose');
-const port = process.env.PORT;
+const mongoose = require('mongoose');
 const app = express(); 
-
+const port = process.env.PORT;
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the Notes Backend!'});
+  res.json({ message: 'Welcome!,Hello from Notes Backend!'});
 });
 
-mongose
+mongoose
   .connect(process.env.DB_URL)
   .then(() => {
     console.log('Connected to MongoDB');
